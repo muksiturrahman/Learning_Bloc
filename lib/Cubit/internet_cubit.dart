@@ -6,6 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 enum InternetState { Initial, Lost, Gained }
 
 class InternetCubit extends Cubit<InternetState> {
+  // ignore: prefer_final_fields
   Connectivity _connectivity = Connectivity();
   StreamSubscription? connectivitySubscription;
 
